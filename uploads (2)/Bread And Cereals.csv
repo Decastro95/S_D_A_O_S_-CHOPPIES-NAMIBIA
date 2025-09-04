@@ -1,0 +1,99 @@
+Product ID,Product Name,Category,Product Code,Barcode,Price (NAD),Inventory,Supplier ID
+P0001,White Bread,Bread and Cereals,P0001,2.96E+12,8.63,150,S002
+P0002,Wholegrain Bread,Bread and Cereals,P0002,4.93E+12,25.23,62,S003
+P0003,Rye Bread,Bread and Cereals,P0003,1.56E+12,9.32,121,S004
+P0004,"Oats (Rolled, Steel-cut, Instant)",Bread and Cereals,P0004,9.89E+12,92.29,297,S005
+P0005,"Rice (White, Brown, Basmati, Jasmine)",Bread and Cereals,P0005,8.38E+12,36.96,311,S001
+P0006,Maize/Cornmeal,Bread and Cereals,P0006,1.12E+12,115.03,91,S002
+P0007,Wheat Flour,Bread and Cereals,P0007,8.44E+12,54.34,89,S003
+P0008,Cornflakes,Bread and Cereals,P0008,6.92E+12,19.82,204,S004
+P0009,Oatmeal,Bread and Cereals,P0009,7.31E+12,127.89,319,S005
+P0010,Puffed Rice,Bread and Cereals,P0010,7.66E+12,16.43,160,S001
+P0011,Barley,Bread and Cereals,P0011,7.36E+12,88.72,370,S002
+P0012,Quinoa,Bread and Cereals,P0012,1.80E+12,100.88,405,S003
+P0013,Millet (including Mahangu),Bread and Cereals,P0013,7.68E+12,45.31,335,S004
+P0014,Muesli,Bread and Cereals,P0014,7.42E+12,28.58,191,S005
+P0015,Breakfast Cereals,Bread and Cereals,P0015,2.26E+12,93.32,97,S001
+P0016,"Pasta (Spaghetti, Penne, Macaroni)",Bread and Cereals,P0016,3.87E+12,72.03,148,S002
+P0017,"Beef (Fresh, Processed)",Meat,P0017,4.86E+12,104.27,441,S003
+P0018,Pork,Meat,P0018,5.03E+12,124.16,422,S004
+P0019,Chicken,Meat,P0019,8.06E+12,43.82,118,S005
+P0020,Duck,Meat,P0020,6.54E+12,35.83,265,S001
+P0021,Lamb,Meat,P0021,3.51E+12,43.41,136,S002
+P0022,"Game Meat (Venison, etc.)",Meat,P0022,5.62E+12,113.32,229,S003
+P0023,Sausages,Meat,P0023,7.37E+12,36.8,80,S004
+P0024,Deli Meats,Meat,P0024,9.68E+12,18.18,34,S005
+P0025,Bacon,Meat,P0025,2.93E+12,27.16,91,S001
+P0026,Ham,Meat,P0026,7.77E+12,60.33,249,S002
+P0027,Liver,Meat,P0027,5.42E+12,145.81,450,S003
+P0028,Meat Offal,Meat,P0028,1.21E+12,103.64,68,S004
+P0029,Jerky,Meat,P0029,6.99E+12,21.18,232,S005
+P0030,"Meat Alternatives (Tofu, Tempeh, Seitan)",Meat,P0030,8.98E+12,5.47,379,S001
+P0031,Granulated Sugar,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0031,9.93E+12,137.33,455,S002
+P0032,Brown Sugar,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0032,6.25E+12,127.04,269,S003
+P0033,Powdered Sugar,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0033,4.50E+12,27.16,400,S004
+P0034,"Jams and Preserves (Strawberry, Apple, Mixed Fruit)","Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0034,1.01E+12,91.85,260,S005
+P0035,"Honey (Raw, Processed)","Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0035,2.97E+12,139.72,459,S001
+P0036,Maple Syrup,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0036,6.41E+12,39.72,133,S002
+P0037,Agave Nectar,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0037,2.39E+12,17.42,258,S003
+P0038,Chocolate Bars,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0038,2.22E+12,146.81,282,S004
+P0039,Cocoa Powder,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0039,3.22E+12,23.62,253,S005
+P0040,Caramel,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0040,5.66E+12,81.51,320,S001
+P0041,"Candies (Hard, Soft)","Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0041,8.02E+12,149.3,342,S002
+P0042,Lollipops,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0042,8.71E+12,135.44,241,S003
+P0043,Gum,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0043,5.36E+12,37.58,183,S004
+P0044,Toffees,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0044,5.05E+12,90.32,13,S005
+P0045,Marshmallows,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0045,2.04E+12,38.2,473,S001
+P0046,Confectionery Chocolates,"Sugar, Jam, Honey, Syrups, Chocolate, and Confectionery",P0046,2.25E+12,79.55,152,S002
+P0047,"Fresh Milk (Cow, Goat, Plant-Based Alternatives)","Milk, Cheese, and Eggs",P0047,9.54E+12,36.06,77,S003
+P0048,UHT Milk,"Milk, Cheese, and Eggs",P0048,9.32E+12,40.23,252,S004
+P0049,"Yogurt (Plain, Flavored)","Milk, Cheese, and Eggs",P0049,8.16E+12,32.61,59,S005
+P0050,"Cheese (Cheddar, Mozzarella, Parmesan, Cream Cheese, Blue Cheese)","Milk, Cheese, and Eggs",P0050,8.58E+12,56.37,220,S001
+P0051,Butter,"Milk, Cheese, and Eggs",P0051,1.95E+12,102.64,340,S002
+P0052,Cream,"Milk, Cheese, and Eggs",P0052,2.07E+12,63.38,183,S003
+P0053,Whey Protein,"Milk, Cheese, and Eggs",P0053,5.37E+12,32.78,284,S004
+P0054,"Eggs (Chicken, Duck, Quail)","Milk, Cheese, and Eggs",P0054,3.47E+12,66.17,152,S005
+P0055,Egg Substitutes,"Milk, Cheese, and Eggs",P0055,5.40E+12,131.8,48,S001
+P0056,Custard,"Milk, Cheese, and Eggs",P0056,2.72E+12,12.34,286,S002
+P0057,"Leafy Greens (Spinach, Lettuce, Kale)",Vegetables,P0057,1.26E+12,145.5,484,S003
+P0058,"Root Vegetables (Carrots, Beets, Turnips)",Vegetables,P0058,3.93E+12,63.93,256,S004
+P0059,"Tubers (Potatoes, Sweet Potatoes)",Vegetables,P0059,3.90E+12,59.95,209,S005
+P0060,Tomatoes,Vegetables,P0060,6.02E+12,66.34,500,S001
+P0061,Onions,Vegetables,P0061,3.73E+12,32.54,121,S002
+P0062,Bell Peppers,Vegetables,P0062,2.03E+12,88.98,287,S003
+P0063,Cucumbers,Vegetables,P0063,2.01E+12,12.27,254,S004
+P0064,Zucchini,Vegetables,P0064,2.00E+12,144.31,51,S005
+P0065,Broccoli,Vegetables,P0065,4.27E+12,14.94,44,S001
+P0066,Cauliflower,Vegetables,P0066,8.10E+12,22.38,465,S002
+P0067,Cabbage,Vegetables,P0067,5.33E+12,88.94,30,S003
+P0068,Peas,Vegetables,P0068,2.44E+12,65.79,308,S004
+P0069,Green Beans,Vegetables,P0069,4.59E+12,102.11,170,S005
+P0070,Eggplant,Vegetables,P0070,5.67E+12,62.39,353,S001
+P0071,Mushrooms,Vegetables,P0071,6.28E+12,71.3,485,S002
+P0072,Asparagus,Vegetables,P0072,1.16E+12,71.45,298,S003
+P0073,Garlic,Vegetables,P0073,2.76E+12,15.62,119,S004
+P0074,Beef Biltong,Biltong,P0074,5.67E+12,24.21,188,S005
+P0075,Venison Biltong,Biltong,P0075,2.21E+12,132.49,199,S001
+P0076,Chicken Biltong,Biltong,P0076,3.78E+12,68.54,288,S002
+P0077,Fish Biltong (Dried Fish),Biltong,P0077,6.32E+12,93.69,423,S003
+P0078,Pearl Millet,Mahangu (Millet),P0078,2.82E+12,141.14,78,S004
+P0079,Finger Millet,Mahangu (Millet),P0079,3.03E+12,134.01,390,S005
+P0080,Foxtail Millet,Mahangu (Millet),P0080,3.73E+12,44.49,319,S001
+P0081,Proso Millet,Mahangu (Millet),P0081,4.58E+12,104.69,446,S002
+P0082,Shrimp,Seafood,P0082,9.89E+12,75.84,473,S003
+P0083,Crab,Seafood,P0083,2.62E+12,96.97,434,S004
+P0084,Lobster,Seafood,P0084,1.77E+12,5.51,404,S005
+P0085,Clams,Seafood,P0085,5.61E+12,28.43,236,S001
+P0086,Mussels,Seafood,P0086,2.97E+12,15.91,462,S002
+P0087,Squid,Seafood,P0087,3.61E+12,67.32,31,S003
+P0088,Octopus,Seafood,P0088,7.41E+12,135.35,417,S004
+P0089,Seaweed,Seafood,P0089,4.70E+12,103.9,351,S005
+P0090,"Canned Fish (Tuna, Sardines, Mackerel)",Seafood,P0090,7.22E+12,118.12,462,S001
+P0091,Smoked Fish,Fish-Based Products,P0091,8.15E+12,146.21,393,S002
+P0092,Canned Fish,Fish-Based Products,P0092,5.17E+12,130.37,419,S003
+P0093,Fish Fillets,Fish-Based Products,P0093,4.12E+12,132.81,22,S004
+P0094,Fish Sausages,Fish-Based Products,P0094,6.85E+12,118.45,220,S005
+P0095,Fish Balls,Fish-Based Products,P0095,5.37E+12,43.69,413,S001
+P0096,Fish Oil,Fish-Based Products,P0096,2.90E+12,60.47,29,S002
+P0097,Fish Paste (Surimi),Fish-Based Products,P0097,9.28E+12,37.25,428,S003
+P0098,Fish Snacks,Fish-Based Products,P0098,9.10E+12,55.7,430,S004

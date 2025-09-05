@@ -4,21 +4,18 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  root: 'dashboard', 
-  publicDir: 'dashboard/public',
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true,
   },
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'dashboard/src'),
+      '@': resolve(__dirname, 'src'),
     },
   },
   server: {
     port: 5173,
-    host: true,  // important for Codesandbox
-    allowedHosts: ['.csb.app'] // allow any sandbox preview URL
-  }
+    host: true,
+    open: false, // don't auto-launch browser (CodeSandbox handles preview)
+  },
 })
-

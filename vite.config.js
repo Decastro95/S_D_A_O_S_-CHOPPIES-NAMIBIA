@@ -4,8 +4,12 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: true, // required for CodeSandbox/Replit
+    host: true,
     port: 5173,
-    open: false, // don't auto-open with xdg-open
+    allowedHosts: [
+      "78lgsg-5173.csb.app", // CodeSandbox
+      ".csb.app", // fallback for sandbox previews
+      "localhost", // local dev
+    ],
   },
 });

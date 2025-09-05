@@ -1,16 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
-    },
-  },
   server: {
+    host: true, // required for CodeSandbox/Replit
     port: 5173,
-    host: true,   // ensures CodeSandbox works without xdg-open
+    open: false, // don't auto-open with xdg-open
   },
-})
+});

@@ -4,10 +4,6 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: 'dist',
-    emptyOutDir: true,
-  },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
@@ -15,7 +11,6 @@ export default defineConfig({
   },
   server: {
     port: 5173,
-    host: true,
-    open: false, // don't auto-launch browser (CodeSandbox handles preview)
+    host: true,   // ensures CodeSandbox works without xdg-open
   },
 })

@@ -1,26 +1,31 @@
 {
-  // Install dependencies with npm
   "setupTasks": [
     {
-      "name": "npm install",
+      "name": "Install dependencies",
       "command": "npm install"
     }
   ],
-
-  // Available tasks in CodeSandbox
   "tasks": {
     "dev": {
-      "name": "Start Vite Dev Server",
+      "name": "Vite Dev Server",
       "command": "npm run dev",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 5173,
+        "open": true
+      }
     },
     "build": {
-      "name": "Build for Production",
+      "name": "Build App",
       "command": "npm run build"
     },
     "preview": {
-      "name": "Preview Production Build",
-      "command": "npm run preview"
+      "name": "Preview Build",
+      "command": "npm run preview",
+      "preview": {
+        "port": 4173,
+        "open": true
+      }
     }
   }
 }

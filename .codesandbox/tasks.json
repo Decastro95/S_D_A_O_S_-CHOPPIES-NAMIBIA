@@ -1,0 +1,26 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "npm install",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "Start Vite Dev Server",
+      "command": "npm run dev",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "Build for Production",
+      "command": "npm run build"
+    },
+    "preview": {
+      "name": "Preview Production Build",
+      "command": "npm run preview"
+    }
+  }
+}

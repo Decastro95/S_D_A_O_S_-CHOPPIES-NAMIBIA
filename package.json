@@ -1,12 +1,12 @@
 {
-  "name": "react-template",
+  "name": "choppies-dashboard",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",              // start dev server
-    "build": "vite build",      // build for production
-    "preview": "vite preview",  // locally preview production build
+    "dev": "vite",              // starts Vite dev server (port 5173)
+    "build": "vite build",      // builds production files
+    "preview": "vite preview",  // serves built files on port 4173
     "lint": "eslint ./src --quiet"
   },
   "dependencies": {

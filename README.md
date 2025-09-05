@@ -1,185 +1,187 @@
-# Choppies Namibia Sales Analytics Dashboard
+# 🏪 Choppies Namibia Sales Analytics Dashboard
 
-## 🏪 Project Overview
+[![CI/CD Deploy](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml/badge.svg)](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml)
+[![Vercel Status](https://vercelbadge.vercel.app/api/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)](https://S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app)
 
-This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibia**, a multi-regional retail chain operating across 14 regions in Namibia. The dashboard provides real-time business intelligence and data visualization for sales performance, regional analysis, shop management, and inventory tracking.
+---
 
-## 📊 Features
+## 📖 Project Overview
 
-### 1. Regional Overview
-- **Population-based Sales Analysis**: Sales data correlated with regional population demographics
-- **14 Regions Covered**: All major Namibian regions from Khomas (capital) to remote areas
-- **Economic Factor Integration**: Different spending patterns based on regional economic conditions
-- **Revenue Distribution**: Visual representation of sales across regions
-- **Growth Tracking**: Year-over-year performance metrics
+This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibia**, a multi-regional retail chain operating across 14 regions in Namibia.  
+It provides **real-time business intelligence** and **data visualization** for:
 
-### 2. Shop Performance Analysis
-- **23 Active Shops**: Individual performance tracking for each location
-- **Monthly Sales Trends**: 12-month historical data with seasonal variations
-- **Customer Analytics**: Customer count and transaction patterns
-- **Regional Filtering**: Filter shops by specific regions
-- **Comparative Analysis**: Side-by-side shop performance comparison
+- Regional sales performance
+- Shop-level analysis
+- Inventory tracking
+- Growth and market penetration insights
 
-### 3. Sales Analytics
-- **Company-wide Metrics**: Total revenue, transactions, and growth indicators
-- **Quarterly Performance**: Q1-Q4 sales breakdown
-- **Product Categories**: 5 main categories (Groceries, Fresh Produce, Beverages, etc.)
-- **Top Products**: Best-selling items with Namibian market context
-- **Transaction Volume**: Monthly transaction count analysis
+---
 
-### 4. Inventory Management
-- **Stock Status Tracking**: Real-time inventory levels across categories
-- **Low Stock Alerts**: Automated warnings for items needing restocking
-- **Turnover Rate Analysis**: Inventory efficiency metrics
-- **Action Items**: Urgent restocking and management recommendations
+## ✨ Features
+
+### 🗺 Regional Overview
+
+- Population-based sales analysis
+- Coverage of **14 Namibian regions**
+- Economic multipliers (e.g., Khomas 1.5x, Erongo 1.3x, rural 0.7–0.9x)
+- Revenue distribution & YoY growth
+
+### 🏬 Shop Performance
+
+- **23 active shops** tracked
+- Monthly and seasonal sales trends
+- Customer transaction analysis
+- Region-based filtering & comparison
+
+### 📊 Sales Analytics
+
+- Company-wide revenue + KPIs
+- Quarterly breakdowns
+- Product category insights
+- Top products & transaction volumes
+
+### 📦 Inventory Management
+
+- Real-time stock status
+- Low-stock alerts
+- Turnover & efficiency metrics
+- Action items for restocking
+
+---
 
 ## 🛠 Technical Stack
 
-- **Frontend**: React 18 with Vite
+- **Frontend**: Next.js 15 + React 18
 - **Styling**: Tailwind CSS
-- **Charts**: Recharts library
-- **Data Visualization**: Interactive charts, graphs, and tables
-- **Responsive Design**: Mobile and desktop optimized
+- **Auth & Database**: Supabase
+- **Charts**: Recharts
+- **Hosting & CI/CD**: Vercel (with GitHub Actions)
+
+---
 
 ## 📁 Project Structure
 
-```
 src/
 ├── components/
-│   ├── Dashboard.jsx           # Main dashboard with tab navigation
-│   ├── Header.jsx             # Choppies branded header
-│   ├── RegionalOverview.jsx   # Regional performance analysis
-│   ├── ShopPerformance.jsx    # Individual shop analytics
-│   ├── SalesAnalytics.jsx     # Company-wide sales trends
-│   ├── InventoryDashboard.jsx # Inventory management
-│   └── StatsCard.jsx          # Reusable metric cards
+│ ├── Layout/ # Shared layout with Choppies branding
+│ ├── DashboardCards/ # Reusable KPI/stat cards
+│ ├── RegionalOverview.jsx # Regional analysis
+│ ├── ShopPerformance.jsx # Shop analytics
+│ ├── SalesAnalytics.jsx # Company-wide sales
+│ └── InventoryDashboard.jsx# Stock & inventory
 ├── data/
-│   └── choppiesDataUpdated.js # Sales data with population integration
-└── App.jsx                    # Main application component
-```
+│ └── choppiesData.js # Sales + population data
+└── pages/
+├── index.jsx # Landing / login
+├── admin.jsx # Admin dashboard
+├── manager.jsx # Manager dashboard
+└── cashier.jsx # Cashier dashboard
 
-## 📈 Data Integration
+yaml
+Copy code
 
-### Population-Based Sales Model
-- **Real Namibian Demographics**: Based on actual regional population data
-- **Economic Multipliers**: Different regions have varying spending power
-  - Khomas (Windhoek): 1.5x multiplier (highest income)
-  - Erongo (Coastal): 1.3x multiplier
-  - Northern regions: 0.8-0.9x multiplier
-  - Rural areas: 0.7-0.8x multiplier
+---
 
-### Sales Calculation Formula
-```
+## ⚡️ Data Model
+
+**Revenue formula:**
 Regional Revenue = Population × Base Revenue per Capita × Economic Multiplier
-Customer Base = 50% of regional population (market penetration)
-```
+Customer Base ≈ 50% of regional population
 
-### Seasonal Variations
-- **December**: +30% (Holiday season)
-- **April**: +10% (Post-harvest season)
-- **June-August**: -10% to -15% (Winter months)
+yaml
+Copy code
+
+**Seasonal variations:**
+
+- December: +30%
+- April: +10%
+- Winter (Jun–Aug): -10 to -15%
+
+---
 
 ## 🚀 Installation & Setup
 
 1. **Clone the repository**
    ```bash
-   git clone [repository-url]
-   cd choppies-dashboard
+   git clone https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA.git
+   cd S_D_A_O_S_-CHOPPIES-NAMIBIA
+   Install dependencies
    ```
 
-2. **Install dependencies**
-   ```bash
-   pnpm install
-   ```
+bash
+Copy code
+pnpm install
+Set up environment variables
+Copy .env.local.example → .env.local and fill in your Supabase values:
 
-3. **Start development server**
-   ```bash
-   pnpm run dev
-   ```
+env
+Copy code
+NEXT_PUBLIC_SUPABASE_URL=your-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-key
+Run dev server
 
-4. **Build for production**
-   ```bash
-   pnpm run build
-   ```
+bash
+Copy code
+pnpm dev
+Build for production
 
-## 📊 Key Metrics
+bash
+Copy code
+pnpm build
+📊 Key Business Metrics (Demo Data)
+Total Revenue: N$37.2M
 
-- **Total Revenue**: N$37.2M across all shops
-- **Active Shops**: 23 locations
-- **Market Coverage**: 2.4M people served
-- **Average Transaction**: N$127
-- **Customer Base**: 25,000+ active customers
+Active Shops: 23
 
-## 🌍 Regional Coverage
+Market Coverage: 2.4M people
 
-1. **Khomas** (3 shops) - Windhoek area - Highest revenue
-2. **Ohangwena** (1 shop) - Eenhana
-3. **Omusati** (2 shops) - Outapi, Okahao
-4. **Oshikoto** (2 shops) - Omuthiya, Tsumeb
-5. **Oshana** (2 shops) - Ondangwa, Oshakati
-6. **Erongo** (2 shops) - Walvis Bay, Swakopmund
-7. **Otjozondjupa** (2 shops) - Otjiwarongo, Okahandja
-8. **Kavango East** (1 shop) - Rundu
-9. **Zambezi** (1 shop) - Katima Mulilo
-10. **Kavango West** (1 shop) - Nkurenkuru
-11. **Kunene** (1 shop) - Opuwo
-12. **Karas** (2 shops) - Keetmanshoop, Lüderitz
-13. **Hardap** (2 shops) - Mariental, Rehoboth
-14. **Omaheke** (1 shop) - Gobabis
+Avg Transaction: N$127
 
-## 🎯 Business Intelligence Features
+Customer Base: 25,000+
 
-### Automated Insights
-- **Growth Leaders**: Regions with highest YoY growth
-- **Revenue per Capita**: Economic performance indicators
-- **Market Penetration**: Customer acquisition metrics
-- **Inventory Optimization**: Stock level recommendations
+🌍 Regional Coverage
+Khomas (Windhoek, 3 shops) → Highest revenue
 
-### Interactive Visualizations
-- **Population vs Revenue Correlation**: Scatter plot analysis
-- **Regional Revenue Distribution**: Pie charts
-- **Monthly Sales Trends**: Line graphs with seasonal patterns
-- **Quarterly Performance**: Bar charts
-- **Stock Status**: Stacked bar charts and pie charts
+Erongo (Walvis Bay, Swakopmund) → Strong coastal sales
 
-## 📱 Responsive Design
+Northern Regions (Oshana, Oshikoto, Ohangwena, Omusati) → Mid-range growth
 
-- **Desktop**: Full dashboard with all features
-- **Tablet**: Optimized layout with collapsible sections
-- **Mobile**: Stacked cards and simplified navigation
+Remote Areas (Kunene, Zambezi, Omaheke, Kavango West) → Lower but steady demand
 
-## 🔧 Customization
+🎯 Business Intelligence
+Growth leaders (regions with highest YoY growth)
 
-The dashboard is designed to be easily customizable:
+Revenue per capita KPIs
 
-1. **Data Sources**: Update `choppiesDataUpdated.js` with real data
-2. **Branding**: Modify colors and logos in components
-3. **Metrics**: Add new KPIs in dashboard components
-4. **Regions**: Expand to new regions by updating data structure
+Market penetration insights
 
-## 📝 Usage for Academic Projects
+Inventory optimization recommendations
 
-This dashboard is perfect for:
-- **IT Project Management** presentations
-- **Business Intelligence** coursework
-- **Data Visualization** assignments
-- **Software Development** portfolios
-- **Database Management** projects
+📱 Responsive Design
+Desktop: Full-feature dashboards
 
-## 🎓 Educational Value
+Tablet: Collapsible sections
 
-- **Real-world Application**: Based on actual Namibian retail scenario
-- **Data-driven Decision Making**: Demonstrates BI principles
-- **Modern Web Development**: React, responsive design, data visualization
-- **Business Context**: Retail analytics and performance management
+Mobile: Card-based stacked UI
 
-## 📞 Support
+🧑‍💻 Development Notes
+Add real data in src/data/choppiesData.js
 
-For questions or modifications, refer to:
-- Component documentation in code comments
-- Data structure in `choppiesDataUpdated.js`
-- Styling guidelines in Tailwind CSS classes
+Update branding via Tailwind config & shared layout
 
----
+Extend dashboards by adding more KPI cards in components/DashboardCards
 
-**Developed for Academic Purposes** | **Choppies Namibia Sales Analytics Dashboard** | **2025**
+🚀 Deploy Your Own
+You can deploy your own instance with one click:
+
+📞 Support & Credits
+Built with Next.js + Supabase + Vercel
+
+Academic project: 2025 IT & BI coursework
+
+Maintainer: @Decastro95
+
+Choppies Namibia Sales Analytics Dashboard © 2025 — Academic Use Only
+
+yaml
+Copy code

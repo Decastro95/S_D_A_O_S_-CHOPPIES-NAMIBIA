@@ -16,11 +16,11 @@
       }
     },
     "build": {
-      "name": "Build App",
+      "name": "Build for Production",
       "command": "npm run build"
     },
     "preview": {
-      "name": "Preview Build",
+      "name": "Preview Production Build",
       "command": "npm run preview",
       "preview": {
         "port": 4173,

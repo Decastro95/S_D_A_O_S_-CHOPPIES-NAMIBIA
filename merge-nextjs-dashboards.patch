@@ -1,0 +1,302 @@
+diff --git a/index.html b/index.html
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/vite.config.js b/vite.config.js
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/netlify.toml b/netlify.toml
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/tailwind.config.cjs b/tailwind.config.cjs
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/postcss.config.cjs b/postcss.config.cjs
+deleted file mode 100644
+index e69de29..0000000
+diff --git a/package.json b/package.json
+index 1111111..2222222 100644
+--- a/package.json
++++ b/package.json
+@@
+   "scripts": {
+-    "dev": "vite",
+-    "build": "vite build",
+-    "preview": "vite preview"
++    "dev": "next dev",
++    "build": "next build",
++    "start": "next start",
++    "lint": "next lint"
+   },
+   "dependencies": {
+-    "vite": "^4.0.0"
++    "next": "13.5.0",
++    "react": "18.2.0",
++    "react-dom": "18.2.0",
++    "@supabase/supabase-js": "^2.39.1"
+   },
+   "devDependencies": {
+-    "tailwindcss": "^3.2.0",
+-    "postcss": "^8.4.0",
+-    "autoprefixer": "^10.4.0"
++    "tailwindcss": "^3.3.3",
++    "postcss": "^8.4.31",
++    "autoprefixer": "^10.4.16",
++    "eslint": "8.50.0",
++    "eslint-config-next": "13.5.0"
+   }
+ }
+diff --git a/next.config.js b/next.config.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/next.config.js
+@@
++/** @type {import('next').NextConfig} */
++const nextConfig = {
++  reactStrictMode: true,
++}
++
++module.exports = nextConfig
+diff --git a/tailwind.config.js b/tailwind.config.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/tailwind.config.js
+@@
++/** @type {import('tailwindcss').Config} */
++module.exports = {
++  content: [
++    "./pages/**/*.{js,ts,jsx,tsx}",
++    "./components/**/*.{js,ts,jsx,tsx}"
++  ],
++  theme: {
++    extend: {
++      colors: {
++        choppiesRed: "#D90429",
++        choppiesGreen: "#008000"
++      }
++    },
++  },
++  plugins: [],
++}
+diff --git a/postcss.config.js b/postcss.config.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/postcss.config.js
+@@
++module.exports = {
++  plugins: {
++    tailwindcss: {},
++    autoprefixer: {},
++  },
++}
+diff --git a/.env.local.example b/.env.local.example
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/.env.local.example
+@@
++NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
++NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
++
+diff --git a/components/Layout.js b/components/Layout.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/components/Layout.js
+@@
++export default function Layout({ children }) {
++  return (
++    <div className="flex min-h-screen bg-gray-100">
++      {/* Sidebar */}
++      <aside className="w-64 bg-choppiesGreen text-white p-4">
++        <h2 className="text-xl font-bold mb-6">Choppies</h2>
++        <nav className="space-y-4">
++          <a href="/admin" className="block">Admin</a>
++          <a href="/manager" className="block">Manager</a>
++          <a href="/cashier" className="block">Cashier</a>
++        </nav>
++      </aside>
++
++      {/* Main content */}
++      <div className="flex-1">
++        <header className="bg-choppiesRed text-white p-4">
++          <h1 className="text-lg font-bold">Dashboard</h1>
++        </header>
++        <main className="p-6">{children}</main>
++      </div>
++    </div>
++  )
++}
+diff --git a/pages/admin/index.js b/pages/admin/index.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/pages/admin/index.js
+@@
++import Layout from "../../components/Layout";
++
++export default function AdminDashboard() {
++  return (
++    <Layout>
++      <h2 className="text-2xl font-bold mb-4">Admin Dashboard</h2>
++      <p>Welcome, Admin! Metrics and tools will appear here.</p>
++    </Layout>
++  );
++}
+diff --git a/pages/manager/index.js b/pages/manager/index.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/pages/manager/index.js
+@@
++import Layout from "../../components/Layout";
++
++export default function ManagerDashboard() {
++  return (
++    <Layout>
++      <h2 className="text-2xl font-bold mb-4">Manager Dashboard</h2>
++      <p>Welcome, Manager! Store reports will appear here.</p>
++    </Layout>
++  );
++}
+diff --git a/pages/cashier/index.js b/pages/cashier/index.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/pages/cashier/index.js
+@@
++import Layout from "../../components/Layout";
++
++export default function CashierDashboard() {
++  return (
++    <Layout>
++      <h2 className="text-2xl font-bold mb-4">Cashier Dashboard</h2>
++      <p>Welcome, Cashier! Transactions will appear here.</p>
++    </Layout>
++  );
++}
+diff --git a/pages/login.js b/pages/login.js
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/pages/login.js
+@@
++import { createClient } from "@supabase/supabase-js";
++import { useState } from "react";
++
++const supabase = createClient(
++  process.env.NEXT_PUBLIC_SUPABASE_URL,
++  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
++);
++
++export default function Login() {
++  const [email, setEmail] = useState("");
++  const [password, setPassword] = useState("");
++
++  const handleLogin = async (e) => {
++    e.preventDefault();
++    const { data, error } = await supabase.auth.signInWithPassword({
++      email,
++      password,
++    });
++    if (error) {
++      alert(error.message);
++    } else {
++      alert("Login successful!");
++    }
++  };
++
++  return (
++    <div className="flex items-center justify-center h-screen bg-gray-50">
++      <form onSubmit={handleLogin} className="bg-white p-6 rounded shadow-md">
++        <h2 className="text-xl font-bold mb-4">Login</h2>
++        <input
++          type="email"
++          placeholder="Email"
++          value={email}
++          onChange={(e) => setEmail(e.target.value)}
++          className="block w-full mb-3 p-2 border rounded"
++        />
++        <input
++          type="password"
++          placeholder="Password"
++          value={password}
++          onChange={(e) => setPassword(e.target.value)}
++          className="block w-full mb-3 p-2 border rounded"
++        />
++        <button type="submit" className="bg-choppiesRed text-white px-4 py-2 rounded">
++          Login
++        </button>
++      </form>
++    </div>
++  );
++}
+diff --git a/public/logo-choppies.png b/public/logo-choppies.png
+new file mode 100644
+index 0000000..1111111
+Binary files /dev/null and b/public/logo-choppies.png differ
+diff --git a/sql/profiles.sql b/sql/profiles.sql
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/sql/profiles.sql
+@@
++-- Ensure profiles table exists
++create table if not exists profiles (
++  id uuid references auth.users on delete cascade primary key,
++  role text check (role in ('admin','manager','cashier')),
++  created_at timestamp default now()
++);
++
++-- Insert demo users (passwords set in Supabase Auth dashboard)
++insert into profiles (id, role)
++select id, 'admin' from auth.users where email = 'admin@choppies.com'
++on conflict (id) do nothing;
++
++insert into profiles (id, role)
++select id, 'manager' from auth.users where email = 'manager@choppies.com'
++on conflict (id) do nothing;
++
++insert into profiles (id, role)
++select id, 'cashier' from auth.users where email = 'cashier@choppies.com'
++on conflict (id) do nothing;
+diff --git a/.github/workflows/deploy.yml b/.github/workflows/deploy.yml
+new file mode 100644
+index 0000000..1111111
+--- /dev/null
++++ b/.github/workflows/deploy.yml
+@@
++name: Deploy to Vercel
++
++on:
++  push:
++    branches:
++      - main
++
++jobs:
++  deploy:
++    runs-on: ubuntu-latest
++    steps:
++      - name: Checkout code
++        uses: actions/checkout@v3
++
++      - name: Setup Node.js
++        uses: actions/setup-node@v3
++        with:
++          node-version: 18
++
++      - name: Install dependencies
++        run: npm install
++
++      - name: Build project
++        run: npm run build
++
++      - name: Deploy to Vercel
++        uses: amondnet/vercel-action@v25
++        with:
++          vercel-token: ${{ secrets.VERCEL_TOKEN }}
++          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
++          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
++          working-directory: ./

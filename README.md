@@ -296,3 +296,68 @@ Your site will be live after deployment 🎉.
 - Without them, the app will still run using local/mock data, but live APIs will not connect.
 
 ---
+# 🛒 Choppies Namibia Dashboards
+
+Role-based dashboards (Admin / Manager / Cashier) with **Next.js + Tailwind + Supabase**.
+
+![Choppies Logo](./public/logo-choppies.png)
+
+---
+
+## 🚀 Features
+- TailwindCSS + Choppies corporate colors
+- Shared `Layout.js` with header (red) + sidebar (green)
+- Role-based redirects after login
+- Supabase Auth + `profiles` table
+- Seed SQL script for demo users (with default passwords)
+
+---
+
+## 👥 Demo Accounts
+Run the SQL seed (`/sql/profiles.sql`) in your Supabase SQL Editor (service_role).
+
+| Role    | Email                | Password    |
+|---------|----------------------|-------------|
+| Admin   | admin@choppies.com   | Admin123!   |
+| Manager | manager@choppies.com | Manager123! |
+| Cashier | cashier@choppies.com | Cashier123! |
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone repo
+\`\`\`bash
+git clone https://github.com/YOUR-ORG/choppies-dashboards.git
+cd choppies-dashboards
+\`\`\`
+
+### 2. Install dependencies
+\`\`\`bash
+npm install
+\`\`\`
+
+### 3. Setup env
+Copy \`.env.local.example\` → \`.env.local\` and fill in Supabase keys.
+
+### 4. Run locally
+\`\`\`bash
+npm run dev
+\`\`\`
+
+### 5. Deploy
+Click below to deploy to Vercel 👇
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR-ORG/choppies-dashboards)
+
+---
+
+## 🌍 CodeSandbox
+You can also import this repo directly into CodeSandbox for instant preview:
+- Go to [CodeSandbox](https://codesandbox.io/).
+- **New Sandbox → Import from GitHub → paste repo URL.**
+
+---
+
+## 📜 License
+MIT

@@ -1,7 +1,15 @@
-export default function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import POSDashboard from "./pages/POSDashboard";
+
+function App() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100 text-gray-800">
-      <h1 className="text-3xl font-bold">🚀 Choppies Namibia Dashboard</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/pos" element={<POSDashboard />} />
+      </Routes>
+    </Router>
   );
 }
+
+export default App;
+

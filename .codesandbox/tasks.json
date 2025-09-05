@@ -1,5 +1,5 @@
 {
-  // These tasks will run in order when initializing your CodeSandbox project.
+  // These tasks run automatically when the sandbox initializes
   "setupTasks": [
     {
       "name": "npm install",
@@ -7,20 +7,27 @@
     }
   ],
 
-  // These tasks can be run from CodeSandbox.
+  // Tasks available to run manually in CodeSandbox
   "tasks": {
     "dev": {
       "name": "npm run dev",
       "command": "npm run dev",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
     },
     "build": {
       "name": "npm run build",
       "command": "npm run build"
     },
-    "preview": {
-      "name": "npm run preview",
-      "command": "npm run preview"
+    "start": {
+      "name": "npm run start",
+      "command": "npm run start"
+    },
+    "lint": {
+      "name": "npm run lint",
+      "command": "npm run lint"
     }
   }
 }

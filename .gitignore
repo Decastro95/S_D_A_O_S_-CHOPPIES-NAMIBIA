@@ -1,25 +1,24 @@
-# dependencies
-/node_modules
-
-# production build
-/dist
-
-# local env files
-.env
-.env.local
-
-# IDE/editor
-.vscode
-.idea
-
-# logs
+# Node
+node_modules
+dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Logs
+*.log
+*.log.*
+
+# Editor
+.vscode
+.idea
+
+# Sandbox
+.csb
+.codesandbox
 
 # OS
 .DS_Store
-
-# lockfiles (keep only npm)
-/pnpm-lock.yaml
-/yarn.lock
+Thumbs.db

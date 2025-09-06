@@ -1,15 +1,10 @@
-# Netlify configuration for Choppies Namibia Dashboard
-
 [build]
   command = "npm run build"
   publish = "dist"
 
-  [build.environment]
+[build.environment]
   NODE_VERSION = "22"
   NPM_FLAGS = "--legacy-peer-deps"
-  NPM_CONFIG_FORCE = "true"
-  NETLIFY_USE_YARN = "false"
-  NETLIFY_USE_PNPM = "false"
 
 [dev]
   command = "npm run dev"
@@ -17,6 +12,4 @@
   targetPort = 5173
   publish = "dist"
 
-[functions]
-  directory = "netlify/functions"
 

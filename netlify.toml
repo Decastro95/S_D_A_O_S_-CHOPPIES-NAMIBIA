@@ -1,7 +1,8 @@
 # netlify.toml
 
 [build]
-  command = "npm run build"
+  # First show Node version, then run your Vite build
+  command = "node -v && npm run build"
   publish = "dist"
 
 [dev]
@@ -12,8 +13,8 @@
 [functions]
   directory = "netlify/functions"
 
+# Environment variable placeholders (edit in Netlify UI, not here)
 [build.environment]
   NODE_VERSION = "22"
-  # Example placeholders (edit in Netlify UI, not here)
   VITE_API_URL = "https://your-api-url-here"
   VITE_API_KEY = "your-api-key-here"

@@ -8,6 +8,6 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "22"
   VITE_API_URL = "https://your-api-url-here"
   VITE_API_KEY = "your-api-key-here"

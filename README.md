@@ -215,12 +215,31 @@ It has been configured to work locally and on cloud platforms like **CodeSandbox
 
 Clone the repository:
 
+````bash
+git clone https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA.git
+cd S_D_A_O_S_-CHOPPIES-NAMIBIA
+
+# 🛒 Choppies Namibia Dashboard
+
+A modern dashboard project built with:
+
+- [Vite](https://vitejs.dev/) (fast development + build)
+- [React](https://react.dev/) (component-based UI)
+- [Tailwind CSS](https://tailwindcss.com/) (utility-first styling)
+- [PostCSS](https://postcss.org/) (with autoprefixer)
+
+This repo is configured for **npm**, **Netlify**, **Vercel**, and **CodeSandbox** for easy one-click deploys.
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+### 1. Clone the repo
 ```bash
 git clone https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA.git
 cd S_D_A_O_S_-CHOPPIES-NAMIBIA
 
-
 ---
 
 **Developed for Academic Purposes** | **Choppies Namibia Sales Analytics Dashboard** | **2025**
-```
+````

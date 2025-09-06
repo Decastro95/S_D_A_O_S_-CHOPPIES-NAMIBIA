@@ -1,13 +1,17 @@
+# netlify.toml
 [build]
   command = "npm run build"
   publish = "dist"
 
 [dev]
-  command = "vite"
+  command = "npm run dev"
   port = 5173
+  publish = "dist"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[functions]
+  directory = "netlify/functions"
 
+# Environment variable placeholders (edit in Netlify UI, not here)
+[build.environment]
+  VITE_API_URL = "https://your-api-url-here"
+  VITE_API_KEY = "your-api-key-here"

@@ -1,0 +1,24 @@
+# Node
+node_modules
+dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+
+# Logs
+*.log
+*.log.*
+
+# Editor
+.vscode
+.idea
+
+# Sandbox
+.csb
+.codesandbox
+
+# OS
+.DS_Store
+Thumbs.db

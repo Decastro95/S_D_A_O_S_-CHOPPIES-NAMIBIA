@@ -1,15 +1,15 @@
 [build]
-  base = "workspace"
   command = "npm run build"
-  publish = "workspace/dist"
+  publish = "dist"
 
 [dev]
   command = "npm run dev"
   port = 5173
-  publish = "workspace/dist"
+  publish = "dist"
 
 [functions]
   directory = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "22"
+

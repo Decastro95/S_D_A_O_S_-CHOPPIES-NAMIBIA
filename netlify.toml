@@ -3,8 +3,7 @@
   publish = "dist"
 
 [build.environment]
-  NODE_VERSION = "22"
-  NPM_FLAGS = "--legacy-peer-deps"
+  NODE_VERSION = "22" # or "20" if you want LTS
 
 [dev]
   command = "npm run dev"
@@ -12,4 +11,5 @@
   targetPort = 5173
   publish = "dist"
 
-
+[functions]
+  directory = "netlify/functions"

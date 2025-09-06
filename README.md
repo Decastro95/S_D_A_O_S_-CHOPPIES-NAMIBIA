@@ -7,6 +7,7 @@ This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibi
 ## 📊 Features
 
 ### 1. Regional Overview
+
 - **Population-based Sales Analysis**: Sales data correlated with regional population demographics
 - **14 Regions Covered**: All major Namibian regions from Khomas (capital) to remote areas
 - **Economic Factor Integration**: Different spending patterns based on regional economic conditions
@@ -14,6 +15,7 @@ This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibi
 - **Growth Tracking**: Year-over-year performance metrics
 
 ### 2. Shop Performance Analysis
+
 - **23 Active Shops**: Individual performance tracking for each location
 - **Monthly Sales Trends**: 12-month historical data with seasonal variations
 - **Customer Analytics**: Customer count and transaction patterns
@@ -21,6 +23,7 @@ This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibi
 - **Comparative Analysis**: Side-by-side shop performance comparison
 
 ### 3. Sales Analytics
+
 - **Company-wide Metrics**: Total revenue, transactions, and growth indicators
 - **Quarterly Performance**: Q1-Q4 sales breakdown
 - **Product Categories**: 5 main categories (Groceries, Fresh Produce, Beverages, etc.)
@@ -28,6 +31,7 @@ This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibi
 - **Transaction Volume**: Monthly transaction count analysis
 
 ### 4. Inventory Management
+
 - **Stock Status Tracking**: Real-time inventory levels across categories
 - **Low Stock Alerts**: Automated warnings for items needing restocking
 - **Turnover Rate Analysis**: Inventory efficiency metrics
@@ -61,6 +65,7 @@ src/
 ## 📈 Data Integration
 
 ### Population-Based Sales Model
+
 - **Real Namibian Demographics**: Based on actual regional population data
 - **Economic Multipliers**: Different regions have varying spending power
   - Khomas (Windhoek): 1.5x multiplier (highest income)
@@ -69,12 +74,14 @@ src/
   - Rural areas: 0.7-0.8x multiplier
 
 ### Sales Calculation Formula
+
 ```
 Regional Revenue = Population × Base Revenue per Capita × Economic Multiplier
 Customer Base = 50% of regional population (market penetration)
 ```
 
 ### Seasonal Variations
+
 - **December**: +30% (Holiday season)
 - **April**: +10% (Post-harvest season)
 - **June-August**: -10% to -15% (Winter months)
@@ -82,17 +89,20 @@ Customer Base = 50% of regional population (market penetration)
 ## 🚀 Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone [repository-url]
    cd choppies-dashboard
    ```
 
 2. **Install dependencies**
+
    ```bash
    pnpm install
    ```
 
 3. **Start development server**
+
    ```bash
    pnpm run dev
    ```
@@ -130,12 +140,14 @@ Customer Base = 50% of regional population (market penetration)
 ## 🎯 Business Intelligence Features
 
 ### Automated Insights
+
 - **Growth Leaders**: Regions with highest YoY growth
 - **Revenue per Capita**: Economic performance indicators
 - **Market Penetration**: Customer acquisition metrics
 - **Inventory Optimization**: Stock level recommendations
 
 ### Interactive Visualizations
+
 - **Population vs Revenue Correlation**: Scatter plot analysis
 - **Regional Revenue Distribution**: Pie charts
 - **Monthly Sales Trends**: Line graphs with seasonal patterns
@@ -160,6 +172,7 @@ The dashboard is designed to be easily customizable:
 ## 📝 Usage for Academic Projects
 
 This dashboard is perfect for:
+
 - **IT Project Management** presentations
 - **Business Intelligence** coursework
 - **Data Visualization** assignments
@@ -176,10 +189,38 @@ This dashboard is perfect for:
 ## 📞 Support
 
 For questions or modifications, refer to:
+
 - Component documentation in code comments
 - Data structure in `choppiesDataUpdated.js`
 - Styling guidelines in Tailwind CSS classes
 
+# 🛒 Choppies Namibia Dashboard
+
+This project is a **React + Vite + Tailwind CSS** dashboard app built for managing and visualizing POS data for Choppies Namibia.  
+It has been configured to work locally and on cloud platforms like **CodeSandbox**, **Netlify**, and **Vercel**.
+
+---
+
+## 🚀 Features
+
+- ⚡️ Vite for fast development
+- 🎨 Tailwind CSS styling
+- 🔌 React ecosystem
+- 🌍 Ready for one-click deploy on **Netlify/Vercel**
+- ✅ Configured for **CodeSandbox** compatibility
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA.git
+cd S_D_A_O_S_-CHOPPIES-NAMIBIA
+
+
 ---
 
 **Developed for Academic Purposes** | **Choppies Namibia Sales Analytics Dashboard** | **2025**
+```

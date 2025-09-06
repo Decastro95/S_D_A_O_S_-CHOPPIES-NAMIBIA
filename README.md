@@ -243,3 +243,56 @@ cd S_D_A_O_S_-CHOPPIES-NAMIBIA
 
 **Developed for Academic Purposes** | **Choppies Namibia Sales Analytics Dashboard** | **2025**
 ````
+
+---
+
+## 🚀 Deployment
+
+This project is already configured for **Netlify** and **Vercel**.
+
+### ✅ Netlify
+
+1. Go to [Netlify](https://app.netlify.com/).
+2. Click **New site from Git**.
+3. Connect your GitHub account and select this repository.
+4. Netlify will auto-detect Vite and use:
+   - **Build Command:** `npm run build`
+   - **Publish Directory:** `dist`
+5. (Optional) Add environment variables:
+   - In **Site Settings → Build & Deploy → Environment → Edit Variables**, add any required variables like API keys.
+   - Example:
+     ```
+     VITE_API_URL=https://your-api.com
+     VITE_API_KEY=your-key-here
+     ```
+
+Your site will be live after deployment 🎉.
+
+---
+
+### ✅ Vercel
+
+1. Go to [Vercel](https://vercel.com/).
+2. Click **New Project**.
+3. Import this repository from GitHub.
+4. Vercel will auto-detect Vite and configure:
+   - **Framework Preset:** Vite
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `dist`
+5. (Optional) Add environment variables:
+   - In **Project Settings → Environment Variables**, add your keys.
+   - Example:
+     ```
+     VITE_API_URL=https://your-api.com
+     VITE_API_KEY=your-key-here
+     ```
+
+---
+
+### ⚠️ Notes on Environment Variables
+
+- All **frontend variables must start with `VITE_`** (this is required by Vite).
+- Example: `VITE_API_KEY=mysecret`.
+- Without them, the app will still run using local/mock data, but live APIs will not connect.
+
+---

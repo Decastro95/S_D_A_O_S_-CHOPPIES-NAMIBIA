@@ -1,15 +1,22 @@
+# Netlify configuration for Choppies Namibia Dashboard
+
 [build]
   command = "npm run build"
   publish = "dist"
 
+  [build.environment]
+    NODE_VERSION = "22"
+    NPM_FLAGS = "--legacy-peer-deps"
+    # Environment variable placeholders (set these in Netlify UI)
+    VITE_API_URL = "https://your-api-url-here"
+    VITE_API_KEY = "your-api-key-here"
+
 [dev]
   command = "npm run dev"
   port = 5173
+  targetPort = 5173
   publish = "dist"
 
 [functions]
   directory = "netlify/functions"
-
-[build.environment]
-  NODE_VERSION = "22"
 

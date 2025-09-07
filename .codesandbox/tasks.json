@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   // These tasks run automatically when the sandbox initializes
+=======
+  // These tasks will run in order when initializing your CodeSandbox project.
+>>>>>>> 66209bf (chore: update .gitignore to allow .codesandbox/tasks.json)
   "setupTasks": [
     {
       "name": "npm install",
@@ -7,6 +11,7 @@
     }
   ],
 
+<<<<<<< HEAD
   // Tasks available to run manually in CodeSandbox
   "tasks": {
     "dev": {
@@ -28,6 +33,22 @@
     "lint": {
       "name": "npm run lint",
       "command": "npm run lint"
+=======
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "Start Vite Dev Server",
+      "command": "npm run dev",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "Build for Production",
+      "command": "npm run build"
+    },
+    "preview": {
+      "name": "Preview Production Build",
+      "command": "npm run preview"
+>>>>>>> 66209bf (chore: update .gitignore to allow .codesandbox/tasks.json)
     }
   }
 }

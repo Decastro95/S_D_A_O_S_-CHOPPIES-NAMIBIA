@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Node
 node_modules
 dist
@@ -22,3 +23,6 @@ package-lock.json
 # OS
 .DS_Store
 Thumbs.db
+=======
+# cleaned gitignore
+>>>>>>> 66209bf (chore: update .gitignore to allow .codesandbox/tasks.json)

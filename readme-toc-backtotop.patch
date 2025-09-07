@@ -1,0 +1,26 @@
+diff --git a/README.md b/README.md
+index 9a8f432..f2cd801 100644
+--- a/README.md
++++ b/README.md
+@@
+ ## 🏪 Project Overview
+ 
+ This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibia**, a multi-regional retail chain operating across 14 regions in Namibia. The dashboard provides real-time business intelligence and data visualization for sales performance, regional analysis, shop management, and inventory tracking.
++
++[🔝 Back to top](#-table-of-contents)
+ 
+ ## 📊 Features
+@@
+ - **Action Items**: Urgent restocking and management recommendations
++
++[🔝 Back to top](#-table-of-contents)
+ 
+ ## 🛠 Technical Stack
+@@
+ - **Responsive Design**: Mobile and desktop optimized
++
++[🔝 Back to top](#-table-of-contents)
+ 
+ ## 📁 Project Structure
+@@
+ └── App.jsx                    # Main application component

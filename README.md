@@ -174,6 +174,39 @@ Extend dashboards by adding more KPI cards in components/DashboardCards
 🚀 Deploy Your Own
 You can deploy your own instance with one click:
 
+# Choppies Namibia Sales Analytics Dashboard
+
+[![CI/CD](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml/badge.svg)](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml)
+[![Vercel Status](https://vercelbadge.vercel.app/api/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)](https://S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA&project-name=choppies-dashboards&repository-name=S_D_A_O_S_-CHOPPIES-NAMIBIA&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=Supabase+credentials+needed+for+auth+%26+database+access&envLink=https://supabase.com/dashboard/project)
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-black?logo=codesandbox)](https://codesandbox.io/p/github/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)
+
+---
+
+## 🏪 Project Overview
+
+This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibia**, a multi-regional retail chain operating across 14 regions in Namibia.  
+It provides **real-time BI** for sales, shops, inventory, and regional analysis.
+
+---
+
+## 🚀 Deploy / Edit
+
+- **Live site**: [S*D_A_O_S*-CHOPPIES-NAMIBIA.vercel.app](https://S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app)
+- **CI/CD Status**: See [GitHub Actions](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions)
+- **Edit in CodeSandbox**: [Open Sandbox](https://codesandbox.io/p/github/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)
+- **Deploy your own**: Use the [Deploy with Vercel button above](#choppies-namibia-sales-analytics-dashboard)
+
+---
+
+## 📊 Features
+
+- Role-based dashboards (Admin, Manager, Cashier)
+- Supabase Auth integration with role-based redirects
+- Dynamic sidebar navigation based on role
+- TailwindCSS design with Choppies branding
+- Next.js + Vercel CI/CD pipeline
+
 📞 Support & Credits
 Built with Next.js + Supabase + Vercel
 
@@ -181,7 +214,4 @@ Academic project: 2025 IT & BI coursework
 
 Maintainer: @Decastro95
 
-Choppies Namibia Sales Analytics Dashboard © 2025 — Academic Use Only
-
-yaml
-Copy code
+Choppies Namibia Sales Analytics Dashboard © 2025 — Academic

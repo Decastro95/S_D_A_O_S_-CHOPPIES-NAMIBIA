@@ -1,0 +1,90 @@
+diff --git a/README.md b/README.md
+index e69de29..cdef567 100644
+--- a/README.md
++++ b/README.md
+@@
+-# Choppies Namibia Sales Analytics Dashboard
++# Choppies Namibia Sales Analytics Dashboard
++
++[![CI/CD](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml/badge.svg)](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml)
++[![Vercel Status](https://vercelbadge.vercel.app/api/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)](https://S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app)
++[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA&project-name=choppies-dashboards&repository-name=S_D_A_O_S_-CHOPPIES-NAMIBIA&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=Supabase+credentials+needed+for+auth+%26+database+access&envLink=https://supabase.com/dashboard/project)
++[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-black?logo=codesandbox)](https://codesandbox.io/p/github/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)
++
++---
++
++## 🚀 Deploy / Edit
++
++- **Live site**: [S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app](https://S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app)  
++- **CI/CD Status**: [GitHub Actions](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions)  
++- **Edit in CodeSandbox**: [Open Sandbox](https://codesandbox.io/p/github/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)  
++- **Deploy your own**: Use the [Deploy with Vercel button above](#choppies-namibia-sales-analytics-dashboard)  
++
++---
++
++# 📖 Full Project Documentation
++
++The following sections provide the full **academic README** with population models, BI features, data structures, and educational context.
++
++---
+ 
+-## 🏪 Project Overview
+-
+-This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibia**, a multi-regional retail chain operating across 14 regions in Namibia. The dashboard provides real-time business intelligence and data visualization for sales performance, regional analysis, shop management, and inventory tracking.
++## 🏪 Project Overview
++
++This is a comprehensive **Sales Data Analytics Dashboard** for **Choppies Namibia**, a multi-regional retail chain operating across 14 regions in Namibia. The dashboard provides real-time business intelligence and data visualization for sales performance, regional analysis, shop management, and inventory tracking.
+ 
+ ## 📊 Features
+ 
+@@
+ ## 📞 Support
+ 
+ For questions or modifications, refer to:
+-
+-- Component documentation in code comments
+-- Data structure in `choppiesDataUpdated.js`
+-- Styling guidelines in Tailwind CSS classes
+-
+----
+-
+-**Developed for Academic Purposes** | **Choppies Namibia Sales Analytics Dashboard** | **2025**
+-
+----
+-
+-# S*D_A_O_S*-CHOPPIES-NAMIBIA
+-
+-[![Deploy to Vercel](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml/badge.svg)](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml)
+-
+-Choppies Namibia dashboards with **Next.js + TailwindCSS + Supabase + Vercel CI/CD**.
+-
+----
+-
+-# S*D_A_O_S*-CHOPPIES-NAMIBIA
+-
+-[![Deploy to Vercel](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml/badge.svg)](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml)
+-[![Vercel Status](https://vercelbadge.vercel.app/api/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)](https://S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app)
+-
+-Choppies Namibia dashboards with **Next.js + TailwindCSS + Supabase + Vercel CI/CD**.
+-
+----
+-
+-# S*D_A_O_S*-CHOPPIES-NAMIBIA
+-
+-[![Deploy to Vercel](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml/badge.svg)](https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA/actions/workflows/deploy.yml)
+-[![Vercel Status](https://vercelbadge.vercel.app/api/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)](https://S_D_A_O_S_-CHOPPIES-NAMIBIA.vercel.app)
+-
+----
+-
+-## 🚀 Deploy Your Own
+-
+-You can deploy your own instance of this project to Vercel with one click:
+-
+-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA&project-name=choppies-dashboards&repository-name=S_D_A_O_S_-CHOPPIES-NAMIBIA&env=NEXT_PUBLIC_SUPABASE_URL,NEXT_PUBLIC_SUPABASE_ANON_KEY&envDescription=Supabase+credentials+needed+for+auth+%26+database+access&envLink=https://supabase.com/dashboard/project)
++  - Component documentation in code comments  
++  - Data structure in `choppiesDataUpdated.js`  
++  - Styling guidelines in Tailwind CSS classes  
++
++---
++
++**Developed for Academic Purposes** | **Choppies Namibia Sales Analytics Dashboard** | **2025**

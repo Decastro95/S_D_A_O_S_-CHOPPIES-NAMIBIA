@@ -1,0 +1,36 @@
+diff --git a/README.md b/README.md
+index cdef567..9a8f432 100644
+--- a/README.md
++++ b/README.md
+@@
+ [![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-black?logo=codesandbox)](https://codesandbox.io/p/github/Decastro95/S_D_A_O_S_-CHOPPIES-NAMIBIA)
+ 
+ ---
++
++## 📑 Table of Contents
++
++1. [🚀 Deploy / Edit](#-deploy--edit)
++2. [🏪 Project Overview](#-project-overview)
++3. [📊 Features](#-features)
++   - [Regional Overview](#1-regional-overview)
++   - [Shop Performance Analysis](#2-shop-performance-analysis)
++   - [Sales Analytics](#3-sales-analytics)
++   - [Inventory Management](#4-inventory-management)
++4. [🛠 Technical Stack](#-technical-stack)
++5. [📁 Project Structure](#-project-structure)
++6. [📈 Data Integration](#-data-integration)
++   - [Population-Based Sales Model](#population-based-sales-model)
++   - [Seasonal Variations](#seasonal-variations)
++7. [🚀 Installation & Setup](#-installation--setup)
++8. [📊 Key Metrics](#-key-metrics)
++9. [🌍 Regional Coverage](#-regional-coverage)
++10. [🎯 Business Intelligence Features](#-business-intelligence-features)
++11. [📱 Responsive Design](#-responsive-design)
++12. [🔧 Customization](#-customization)
++13. [📝 Usage for Academic Projects](#-usage-for-academic-projects)
++14. [🎓 Educational Value](#-educational-value)
++15. [📞 Support](#-support)
++
++---
+ 
+ ## 🚀 Deploy / Edit

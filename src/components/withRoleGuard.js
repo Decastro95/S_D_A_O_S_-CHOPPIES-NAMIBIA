@@ -1,37 +1,21 @@
-import { supabase } from "../lib/supabaseClient";
-import { useEffect, useState } from "react";
+// components/withRoleGuard.js
+import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { useUser } from "@supabase/auth-helpers-react";
 
-export default function withRoleGuard(Component, allowedRoles) {
+export default function withRoleGuard(Component, allowedRole) {
   return function GuardedPage(props) {
-    const [loading, setLoading] = useState(true);
+    const user = useUser();
     const router = useRouter();
 
     useEffect(() => {
-      const checkRole = async () => {
-        const {
-          data: { session },
-        } = await supabase.auth.getSession();
+      if (user && user.user_metadata?.role !== allowedRole) {
+        router.push("/login");
+      }
+    }, [user, router]);
 
-        if (!session) {
-          router.push("/login?error=Please log in first");
-          return;
-        }
+    if (!user) return <p>Loading...</p>;
 
-        const role = session.user.user_metadata.role;
-
-        if (!allowedRoles.includes(role)) {
-          router.push("/login?error=Not authorized to access this dashboard");
-          return;
-        }
-
-        setLoading(false);
-      };
-
-      checkRole();
-    }, [router]);
-
-    if (loading) return <p>Loading...</p>;
     return <Component {...props} />;
   };
 }
